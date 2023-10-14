@@ -28,6 +28,7 @@ function formatDate(timestamp) {
     let humidityElement = document.getElementById("humidity");
     let windElement = document.getElementById("wind");
     let dateElement = document.getElementById("date");
+    let iconElement = document.getElementById("icon");
   
     temperatureElement.textContent = Math.round(
       response.data.temperature.current
@@ -37,10 +38,14 @@ function formatDate(timestamp) {
     humidityElement.textContent = response.data.temperature.humidity;
     windElement.textContent = Math.round(response.data.wind.speed);
     dateElement.textContent = formatDate(response.data.time * 1000);
+    iconElement.setAttribute(
+      "src",
+      `https://shecodes-assets.s3.amazonaws.com/api/weather/icons/${response.data.condition.icon}.png`
+    );
   }
   
   let apiKey = "4efbbf43t600f8b07428238a0a4o0852";
-  let city = "New York";
+  let city = "Madrid";
   let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
   
   axios.get(apiUrl).then(displayTemperature);
