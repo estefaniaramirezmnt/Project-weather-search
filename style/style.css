@@ -51,7 +51,7 @@ footer small {
     padding: 30px;
     border-radius: 20px;
     background-color: rgba(166, 185, 217, 0.6);
-    border: 1px solid rgba(166, 185, 217), 0.6;
+    border: 1px solid rgba(166, 185, 217, 0.6);
     color: rgb(242, 248, 252);
 }
 
@@ -83,4 +83,58 @@ footer small {
     position: relative;
     font-size: 16px;
     top: -34px;
+}
+
+#change-theme {
+    background-color: rgba(150, 173, 207, 0.7);
+    border: 1px solid rgba(150, 173, 207, 0.7);    
+    box-shadow: 0px 2px 5px #52616b;
+    border-radius: 35px;
+    color: rgb(242, 248, 252);
+    padding: 10px;
+    font-size: small;
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    transition: all 200ms ease-in-out;
+
+}
+
+#change-theme:hover {
+    background-color: rgba(242, 248, 252, 0.7);
+    border: 1px solid rgba(242, 248, 252,0.7);
+    color: rgb(150, 173, 207);  
+}
+
+
+.dark  {
+    background: linear-gradient(90deg, rgb(83, 93, 103) 0%, rgb(34, 44, 61) 76%);
+}
+
+.dark hr {
+    border-color: rgba(213, 213, 213, 0.3);
+}
+
+.dark .weather-app {
+    background-color: rgba(11, 18, 30, 0.7);
+    border: 1px solid rgba(11, 18, 30, 0.7);
+    color: rgb(213, 213, 213);
+}
+
+.dark .weather-information {
+    background-color: rgb(32, 43, 60);
+    border: 1px solid rgb(32, 43, 60);
+}
+
+.dark #change-theme {
+    background-color: rgba(11, 18, 30, 0.7);
+    border: 1px solid rgba(11, 18, 30, 0.7);
+    border-color: rgba(11, 18, 30, 0.7);
+    box-shadow: 0px 2px 5px rgba(11, 18, 30, 0.8);
+}
+
+.dark #change-theme:hover {
+    background-color: rgba(213, 213, 213, 0.7);
+    border: 1px solid rgba(213, 213, 213,0.7);
+    color: rgb(11, 18, 30);
 }
