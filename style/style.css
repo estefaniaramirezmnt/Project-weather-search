@@ -1,0 +1,16 @@
+body {
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    background-color: rgba(181, 198, 224, 0.7);
+}
+
+.container {
+    margin: 10px auto;
+    margin-top: 70px;
+    padding: 40px 30px;
+    border-radius: 20px;
+    width: 600px;
+    max-width: 100%;
+    background-color: rgb(166, 185, 217);
+    border: 1px solid rgb(166, 185, 217);
+    color: rgb(242, 248, 252);
+}
