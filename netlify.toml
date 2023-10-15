@@ -1,2 +1,1 @@
-[context.production.environment]
-  WEATHER_API_KEY = "YOUR_API_KEY"
+[build.environment] WEATHER_API_KEY = 'YOUR_API_KEY'
