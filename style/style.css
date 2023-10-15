@@ -91,11 +91,12 @@ footer small {
     color: rgb(242, 248, 252);
     padding: 10px;
     font-size: small;
-    position: absolute;
+    display: block;
+    margin: 0 auto;
+    /* position: absolute;
     top: 30px;
-    right: 40px;
+    right: 40px; */
     transition: all 200ms ease-in-out;
-
 }
 
 #change-theme:hover {
