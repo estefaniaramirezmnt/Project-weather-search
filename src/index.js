@@ -44,7 +44,6 @@ function formatDate(timestamp) {
     );
   }
   
-  let apiKey = "4efbbf43t600f8b07428238a0a4o0852";
   let city = "Madrid";
   let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
   
