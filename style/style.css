@@ -100,6 +100,16 @@ footer small {
     color: rgb(150, 173, 207);
 }
 
+#search-button:focus {
+    outline: none;
+    border: none;
+}
+
+#search-button:active {
+    outline: none;
+    border: none;
+}
+
 .weather-temperature .active {
     color: rgb(242, 248, 252);
     cursor: default;
@@ -123,6 +133,8 @@ footer small {
     top: 30px;
     right: 40px; */
     transition: all 200ms ease-in-out;
+    outline: none;
+
 }
 
 #change-theme:hover {
