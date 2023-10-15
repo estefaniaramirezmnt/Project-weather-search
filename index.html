@@ -25,22 +25,11 @@
                 <form id="search-form" class="mb-3">
                     <div class="row">
                         <div class="col-9">
-                            <input 
-                                type="search" 
-                                placeholder="Search a city..." 
-                                class="form-control" 
-                                id="city-input"
-                                autocomplete="off"
-                                autofocus="on"
-                            />
+                            <input type="search" placeholder="Search a city..." class="form-control" id="city-input"
+                                autocomplete="off" autofocus="on" />
                         </div>
                         <div class="col-3">
-                            <input 
-                                type="submit" 
-                                value="Search" 
-                                id="search-button" 
-                                class="btn w-100"
-                            />
+                            <input type="submit" value="Search" id="search-button" class="btn w-100" />
                         </div>
                     </div>
                 </form>
@@ -54,13 +43,11 @@
                 <div class="row weather-information">
                     <div class="col-6">
                         <div class="d-flex weather-temperature">
-                            <img 
-                                src="" 
-                                alt=""
-                                id="icon" 
-                            />
+                            <img src="" alt="" id="icon" />
                             <div>
-                                <strong id="temperature"></strong><span class="units">ºC | <a href="#">ºF </a></span>
+                                <strong id="temperature"></strong><span class="units"><a href="#" id="celsius-link"
+                                        class="active">
+                                        ºC</a> | <a href="#" id="fahrenheit-link">ºF </a></span>
                             </div>
                         </div>
                     </div>

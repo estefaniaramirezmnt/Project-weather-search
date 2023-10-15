@@ -100,6 +100,15 @@ footer small {
     color: rgb(150, 173, 207);
 }
 
+.weather-temperature .active {
+    color: rgb(242, 248, 252);
+    cursor: default;
+}
+
+.weather-temperature .active:hover {
+    text-decoration: none;
+}
+
 #change-theme {
     background-color: rgba(150, 173, 207, 0.7);
     border: 1px solid rgba(150, 173, 207, 0.7);
