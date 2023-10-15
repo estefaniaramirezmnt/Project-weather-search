@@ -42,10 +42,22 @@ function formatDate(timestamp) {
       "src",
       `https://shecodes-assets.s3.amazonaws.com/api/weather/icons/${response.data.condition.icon}.png`
     );
-  }
-  
-  let city = "Madrid";
-  let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
-  
-  axios.get(apiUrl).then(displayTemperature);
-  
+      iconElement.setAttribute("alt", response.data.condition.icon);
+    }
+    
+    function search(city) {
+      let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
+      axios.get(apiUrl).then(displayTemperature);
+    }
+    
+    function handleSubmit(event) {
+      event.preventDefault();
+      let cityInputElement = document.getElementById("city-input");
+      search(cityInputElement.value);
+      cityInputElement.value = "";
+    }
+    
+    search("Madrid");
+    
+    let form = document.getElementById("search-form");
+    form.addEventListener("submit", handleSubmit);
