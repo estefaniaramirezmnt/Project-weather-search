@@ -1,11 +1,12 @@
-function displayForecast() {
-    let forecastElement = document.getElementById("forecast");
-    let forecastHTML = `<div class="row">`;
-    let days = ["Thu", "Fri", "Sat", "Sun"];
-    days.forEach(function (day) {
-      forecastHTML =
-        forecastHTML +
-        `
+function displayForecast(response) {
+  console.log(response.data.daily);
+  let forecastElement = document.getElementById("forecast");
+  let forecastHTML = `<div class="row">`;
+  let days = ["Thu", "Fri", "Sat", "Sun"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
         <div class="col-2">
           <div class="weather-forecast-date">${day}</div>
             <img 
@@ -23,7 +24,7 @@ function displayForecast() {
             </div>
       </div>
       `;
-    });
-    forecastHTML = forecastHTML + `</div>`;
-    forecastElement.innerHTML = forecastHTML;
+  });
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
 }

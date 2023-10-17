@@ -1,25 +1,8 @@
-function formatDate(timestamp) {
-  let date = new Date(timestamp);
-  let hours = date.getHours();
-  if (hours < 10) {
-    hours = `0${hours}`;
-  }
-  let minutes = date.getMinutes();
-  if (minutes < 10) {
-    minutes = `0${minutes}`;
-  }
-  let days = [
-    "Sunday",
-    "Monday",
-    "Tuesday",
-    "Wensday",
-    "Thursday",
-    "Friday",
-    "Saturday",
-  ];
-  let day = days[date.getDay()];
+function getForecast(coordinates) {
+  console.log(coordinates);
+  let apiForecastUrl = `https://api.shecodes.io/weather/v1/forecast?lat=${coordinates.latitude}&lon=${coordinates.longitude}&key=${apiKey}&units=metric`;
 
-  return `${day} ${hours}:${minutes}`;
+  axios.get(apiForecastUrl).then(displayForecast);
 }
 
 function displayTemperature(response) {
@@ -44,6 +27,8 @@ function displayTemperature(response) {
     `https://shecodes-assets.s3.amazonaws.com/api/weather/icons/${response.data.condition.icon}.png`
   );
   iconElement.setAttribute("alt", response.data.condition.icon);
+
+  getForecast(response.data.coordinates)
 }
 
 function search(city) {
@@ -87,5 +72,4 @@ let celsiusLink = document.getElementById("celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
 search("Madrid");
-displayForecast();
 
