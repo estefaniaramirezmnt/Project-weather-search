@@ -119,6 +119,35 @@ footer small {
     text-decoration: none;
 }
 
+.weather-forecast {
+    margin-top: 20px;
+    margin-left: -15px;
+    margin-right: -15px;
+    padding-bottom: 10px;
+    text-align: center;
+    color: rgb(242, 248, 252);
+    background-color: rgba(150, 173, 207, 0.7);
+    border: 1px solid rgba(150, 173, 207, 0.7);
+    border-radius: 18px;
+    padding-top: 10px;
+}
+
+.weather-forecast-date {
+    font-size: 16px;
+}
+
+.weather-forecast-temperatures {
+    font-size: 13px;
+}
+
+.weather-forecast-temperature-max {
+    font-weight: bold;
+}
+
+.weather-forecast-temperature-min {
+    opacity: 0.8;
+}
+
 #change-theme {
     background-color: rgba(150, 173, 207, 0.7);
     border: 1px solid rgba(150, 173, 207, 0.7);
