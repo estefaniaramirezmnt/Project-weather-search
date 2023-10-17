@@ -134,18 +134,19 @@ footer small {
 
 .weather-forecast-date {
     font-size: 16px;
+    font-weight: 500;
 }
 
 .weather-forecast-temperatures {
-    font-size: 13px;
+    font-size: 16px;
 }
 
 .weather-forecast-temperature-max {
-    font-weight: bold;
+    font-weight: 600;
 }
 
 .weather-forecast-temperature-min {
-    opacity: 0.8;
+    font-weight: 400;    
 }
 
 #change-theme {
@@ -187,6 +188,11 @@ footer small {
 }
 
 .dark .weather-information {
+    background-color: rgb(32, 43, 60);
+    border: 1px solid rgb(32, 43, 60);
+}
+
+.dark .weather-forecast {
     background-color: rgb(32, 43, 60);
     border: 1px solid rgb(32, 43, 60);
 }

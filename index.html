@@ -63,27 +63,7 @@
                     </div>
                 </div>
                 <hr />
-                <div class="weather-forecast">
-                    <div class="row">
-                        <div class="col-2">
-                            <div class="weather-forecast-date">Thu
-                            </div>
-                            <img 
-                                src="https://shecodes-assets.s3.amazonaws.com/api/weather/icons/shower-rain-day.png"
-                                alt="" 
-                                width="42"
-                            /> 
-                            <div class="weather-forecast-temperatures">
-                               <span class="weather-forecast-temperature-max">
-                                18º
-                               </span>
-                               <span class="weather-forecast-temperature-min">
-                                12º
-                               </span>
-                            </div>
-                        </div>
-
-                    </div>
+                <div class="weather-forecast" id="forecast">
                 </div>
                 <hr />
                 <footer>
@@ -101,6 +81,8 @@
         <button id="change-theme">Change theme</button>
     </div>
     <script src="src/config.js"></script>
+    <script src="src/forecast.js"></script>
+
     <script src="src/index.js"></script>
     <script src="src/changeTheme.js"></script>
 </body>

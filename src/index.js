@@ -87,4 +87,5 @@ let celsiusLink = document.getElementById("celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
 search("Madrid");
+displayForecast();
 
