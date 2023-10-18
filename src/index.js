@@ -1,6 +1,5 @@
 function getForecast(coordinates) {
   console.log(coordinates);
-  let apiKey = "4efbbf43t600f8b07428238a0a4o0852";
   let apiForecastUrl = `https://api.shecodes.io/weather/v1/forecast?lat=${coordinates.latitude}&lon=${coordinates.longitude}&key=${apiKey}&units=metric`;
 
   axios.get(apiForecastUrl).then(displayForecast);
@@ -33,7 +32,6 @@ function displayTemperature(response) {
 }
 
 function search(city) {
-  let apiKey = "4efbbf43t600f8b07428238a0a4o0852";
   let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
   axios.get(apiUrl).then(displayTemperature);
 }
@@ -48,11 +46,11 @@ function handleSubmit(event) {
 let form = document.getElementById("search-form");
 form.addEventListener("submit", handleSubmit);
 
-// let fahrenheitLink = document.getElementById("fahrenheit-link");
-// fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
+let fahrenheitLink = document.getElementById("fahrenheit-link");
+fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
 
-// let celsiusLink = document.getElementById("celsius-link");
-// celsiusLink.addEventListener("click", displayCelsiusTemperature);
+let celsiusLink = document.getElementById("celsius-link");
+celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
 search("Madrid");
 

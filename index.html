@@ -45,7 +45,9 @@
                         <div class="d-flex weather-temperature">
                             <img src="" alt="" id="icon" />
                             <div>
-                                <strong id="temperature"></strong><span class="units">ºC</span>
+                                <strong id="temperature"></strong><span class="units"><a href="#" id="celsius-link"
+                                        class="active">
+                                        ºC</a> | <a href="#" id="fahrenheit-link">ºF </a></span>
                             </div>
                         </div>
                     </div>
@@ -81,8 +83,8 @@
     <script src="src/config.js"></script>
     <script src="src/formatDate.js"></script>
     <script src="src/forecast.js"></script>
-    <!-- <script src="src/toggleUnit.js"></script> -->
-    <!-- <script src="src/forecastConversion.js"></script> -->
+    <script src="src/toggleUnit.js"></script>
+    <script src="src/forecastConversion.js"></script>
     <script src="src/index.js"></script>
     <script src="src/changeTheme.js"></script>
 </body>

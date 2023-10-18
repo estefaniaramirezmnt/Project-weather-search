@@ -1,11 +1,15 @@
 function displayForecast(response) {
   let forecastData = response.data.daily;
-
+  console.log(forecastData)
   let forecastElement = document.getElementById("forecast");
+
+  celsiusMaxTemperature = forecastData.map((item) => item.temperature.maximum);
+  celsiusMinTemperature = forecastData.map((item) => item.temperature.minimum);
 
   let forecastHTML = `<div class="row">`;
   forecastData.forEach(function (forecastDay, index) {
     if (index < 6) {
+
       forecastHTML += `
       <div class="col-2">
         <div class="weather-forecast-date">${formatForecastDay(
