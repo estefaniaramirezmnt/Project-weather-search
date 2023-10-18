@@ -46,11 +46,11 @@ function handleSubmit(event) {
 let form = document.getElementById("search-form");
 form.addEventListener("submit", handleSubmit);
 
-let fahrenheitLink = document.getElementById("fahrenheit-link");
-fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
+// let fahrenheitLink = document.getElementById("fahrenheit-link");
+// fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
 
-let celsiusLink = document.getElementById("celsius-link");
-celsiusLink.addEventListener("click", displayCelsiusTemperature);
+// let celsiusLink = document.getElementById("celsius-link");
+// celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
 search("Madrid");
 
