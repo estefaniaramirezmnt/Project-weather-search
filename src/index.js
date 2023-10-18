@@ -46,8 +46,8 @@ function handleSubmit(event) {
 let form = document.getElementById("search-form");
 form.addEventListener("submit", handleSubmit);
 
-let farenheitLink = document.getElementById("fahrenheit-link");
-farenheitLink.addEventListener("click", displayFarenheitTemperature);
+let fahrenheitLink = document.getElementById("fahrenheit-link");
+fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
 
 let celsiusLink = document.getElementById("celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);

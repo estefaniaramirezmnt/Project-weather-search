@@ -19,10 +19,10 @@ function displayForecast(response) {
             width="42"
           />
           <div class="weather-forecast-temperatures">
-            <span class="weather-forecast-temperature-max">
+            <span class="temperature-day weather-forecast-temperature-max">
               ${Math.round(forecastDay.temperature.maximum)}º
             </span>
-            <span class="weather-forecast-temperature-min">
+            <span class="temperature-day weather-forecast-temperature-min">
             ${Math.round(forecastDay.temperature.minimum)}º
             </span>
           </div>
